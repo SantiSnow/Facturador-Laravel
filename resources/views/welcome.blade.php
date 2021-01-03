@@ -21,8 +21,8 @@
     <div class="row">
         <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
             <div class="form-group">
-                <form method="post" action="{{ url('/factura') }}">
 
+                <form method="post" action="{{ url('/factura') }}">
                     @csrf
                     <label for="nombre">Nombre del comprador</label>
                     <input type="text" name="nombre" class="form-control" placeholder="Ingrese nombre del comprador" />
@@ -54,15 +54,14 @@
                     <label for="articulo1">Descripción del artículo</label>
                     <input type="text" name="articulo1" class="form-control" placeholder="Ingrese la descripción" />
                     <br />
-
                     <label for="precioArticulo1">Precio del artículo</label>
                     <input type="number" name="precioArticulo1" class="form-control" placeholder="Ingrese el precio" />
                     <br />
-
-
-
-
+                    <label for="cantidad1">Cantidad</label>
+                    <input type="number" name="cantidad1" class="form-control" placeholder="Ingrese cantidad">
                     <br />
+                    <br />
+
                     <button type="submit" class="btn btn-outline-primary">Crear Factura</button>
                     <button type="reset" class="btn btn-outline-danger">Limpiar Campos</button>
                 </form>
