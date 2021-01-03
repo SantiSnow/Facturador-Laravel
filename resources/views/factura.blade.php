@@ -46,7 +46,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <h2 id="subtitulo">Locas por los Zapatos - Factura de cobro</h2><div id="fecha" class="text-right">Fecha: 02/01/2021</div>
+                <h2 id="subtitulo">Locas por los Zapatos - Factura de cobro</h2><div id="fecha" class="text-right">Fecha: {{ date("d-m-Y") }}</div>
             </div>
         </div>
         <div class="row">
@@ -57,7 +57,7 @@
                 <p>Correo electronico: <strong>{{ $factura->email }}</strong></p>
                 <p>Cantidad de cuotas: <strong>{{ $factura->cantidad_cuotas }}</strong></p>
                 <p>Pago a la recepción: <strong>{{ $factura->pago }}</strong></p>
-                <p>Fecha del próximo pago: <strong>02/02/2021</strong></p>
+                <p>Fecha del próximo pago: <strong>{{ $proximo_pago }}</strong></p>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 <table id="tabla-venta">

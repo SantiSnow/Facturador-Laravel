@@ -18,6 +18,9 @@ class FacturaController extends Controller
         $factura->cantidad_cuotas = $request->get("coutas");
         $factura->pago = $request->get("pago");
 
-        return view('factura', compact('factura'));
+        $fecha_emision = date('d-m-Y');
+        $proximo_pago = date('d-m-Y', strtotime($fecha_emision . '+ 1 month'));
+
+        return view('factura', compact('factura'), compact('proximo_pago'));
     }
 }
