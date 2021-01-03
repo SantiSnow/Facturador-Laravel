@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/factura', [FacturaController::class, 'crearFactura']);
+Route::post('/factura', [FacturaController::class, 'crearFactura']);

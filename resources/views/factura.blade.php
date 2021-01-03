@@ -56,7 +56,8 @@
                 <p>Teléfono: <strong>11 2233 - 4455</strong></p>
                 <p>Correo electronico: <strong>dummy_email@gmail.com</strong></p>
                 <p>Cantidad de cuotas: <strong>2</strong></p>
-
+                <p>Pago a la recepción: <strong>Si</strong></p>
+                <p>Fecha del próximo pago: <strong>02/02/2021</strong></p>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 <table id="tabla-venta">
@@ -125,6 +126,14 @@
                 </div>
             </div>
             <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="text-center">
+                    <h3>¡Muchas gracias por su compra!</h3>
+                </div>
+            </div>
         </div>
         <br />
     </div>
