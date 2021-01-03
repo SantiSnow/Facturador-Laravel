@@ -40,7 +40,7 @@
                     <br />
 
                     <label for="pagoRecepcion">Pagó a la recepción:</label>
-                    <select class="form-control">
+                    <select class="form-control" name="pago">
                         <option value="si">Si</option>
                         <option value="no">No</option>
                     </select>

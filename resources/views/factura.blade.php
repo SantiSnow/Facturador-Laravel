@@ -52,11 +52,11 @@
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <h4>Datos del comprador:</h4>
-                <p>Nombre: <strong>John Doe</strong></p>
-                <p>Teléfono: <strong>11 2233 - 4455</strong></p>
-                <p>Correo electronico: <strong>dummy_email@gmail.com</strong></p>
-                <p>Cantidad de cuotas: <strong>2</strong></p>
-                <p>Pago a la recepción: <strong>Si</strong></p>
+                <p>Nombre: <strong>{{ $factura->nombre_comprador }}</strong></p>
+                <p>Teléfono: <strong>{{ $factura->telefono_comprador }}</strong></p>
+                <p>Correo electronico: <strong>{{ $factura->email }}</strong></p>
+                <p>Cantidad de cuotas: <strong>{{ $factura->cantidad_cuotas }}</strong></p>
+                <p>Pago a la recepción: <strong>{{ $factura->pago }}</strong></p>
                 <p>Fecha del próximo pago: <strong>02/02/2021</strong></p>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">

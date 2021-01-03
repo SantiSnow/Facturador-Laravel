@@ -11,7 +11,7 @@ class Factura extends Model
     private $telefono_comprador;
     private $email;
     private $cantidad_cuotas;
-    private $precio_final;
+    private $pago;
 
     use HasFactory;
 }
