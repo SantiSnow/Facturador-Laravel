@@ -72,47 +72,47 @@
                         <th>Precio total</th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Lorem ipsum is dummy text</td>
-                        <td class="precios">$500</td>
-                        <td class="precios">$500</td>
+                        <td>{{ $factura->cantidad }}</td>
+                        <td>{{ $factura->articulo }}</td>
+                        <td class="precios">${{ $factura->precio_unitario }}</td>
+                        <td class="precios">${{ $factura->precio_total }}</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>Lorem ipsum is dummy text</td>
-                        <td class="precios">$500</td>
-                        <td class="precios">$1500</td>
+                        <td></td>
+                        <td></td>
+                        <td class="precios"></td>
+                        <td class="precios"></td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Lorem ipsum is dummy text</td>
-                        <td class="precios">$500</td>
-                        <td class="precios">$1000</td>
+                        <td></td>
+                        <td></td>
+                        <td class="precios"></td>
+                        <td class="precios"></td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Lorem ipsum is dummy text</td>
-                        <td class="precios">$500</td>
-                        <td class="precios">$500</td>
+                        <td></td>
+                        <td></td>
+                        <td class="precios"></td>
+                        <td class="precios"></td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Lorem ipsum is dummy text</td>
-                        <td class="precios">$500</td>
-                        <td class="precios">$500</td>
+                        <td></td>
+                        <td></td>
+                        <td class="precios"></td>
+                        <td class="precios"></td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Lorem ipsum is dummy text</td>
-                        <td class="precios">$500</td>
-                        <td class="precios">$500</td>
+                        <td></td>
+                        <td></td>
+                        <td class="precios"></td>
+                        <td class="precios"></td>
                     </tr>
 
                     <tr>
                         <td></td>
                         <td><strong>Precio final:</strong></td>
                         <td></td>
-                        <td class="precios"><strong>$4500</strong></td>
+                        <td class="precios"><strong></strong></td>
                     </tr>
                 </table>
             </div>

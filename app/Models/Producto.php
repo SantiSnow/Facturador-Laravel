@@ -9,6 +9,10 @@ class Producto extends Model
 {
 
     private $descripcion;
+    private $precio;
+    private $cantidad;
+
+
 
     use HasFactory;
 }

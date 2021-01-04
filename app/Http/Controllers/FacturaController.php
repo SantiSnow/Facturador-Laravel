@@ -28,12 +28,14 @@ class FacturaController extends Controller
             $factura->proximo_pago = [date('d-m-Y', strtotime($fecha_emision . '+ 1 month')), date('d-m-Y', strtotime($fecha_emision . '+ 2 month'))];
         }
         else{
-            $factura->proximo_pago = ["/"];
+            $factura->proximo_pago = ["-"];
         }
 
         //datos del producto
-        $producto = new Producto();
-        $producto->descripcion = "Zapatos y ojotas";
+        $factura->articulo = $request->get('articulo');
+        $factura->precio_unitario = $request->get('precio');
+        $factura->cantidad = $request->get('cantidad');
+        $factura->precio_total = $factura->precio_unitario * $factura->cantidad;
 
         return view('factura', compact('factura'));
     }
