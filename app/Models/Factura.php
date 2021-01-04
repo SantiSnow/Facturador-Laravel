@@ -13,5 +13,7 @@ class Factura extends Model
     private $cantidad_cuotas;
     private $pago;
 
+    private $proximo_pago;
+
     use HasFactory;
 }

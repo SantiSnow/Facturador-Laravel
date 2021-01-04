@@ -22,20 +22,19 @@ class FacturaController extends Controller
         //datos de la fecha
         $fecha_emision = date('d-m-Y');
         if($factura->cantidad_cuotas == 2){
-            $proximo_pago = date('d-m-Y', strtotime($fecha_emision . '+ 1 month'));
+            $factura->proximo_pago = [date('d-m-Y', strtotime($fecha_emision . '+ 1 month'))];
+        }
+        elseif($factura->cantidad_cuotas == 3){
+            $factura->proximo_pago = [date('d-m-Y', strtotime($fecha_emision . '+ 1 month')), date('d-m-Y', strtotime($fecha_emision . '+ 2 month'))];
         }
         else{
-            $proximo_pago = "-";
+            $factura->proximo_pago = ["/"];
         }
 
-
         //datos del producto
-        $producto1 = new Producto();
-        $producto1->descripcion = $request->get('articulo1');
-        $producto1->precio_unitario = $request->get('precioArticulo1');
-        $producto1->cantidad = $request->get('cantidad1');
-        $producto1->calcularPrecioFinal();
+        $producto = new Producto();
+        $producto->descripcion = "Zapatos y ojotas";
 
-        return view('factura', compact('factura'), compact('proximo_pago'), compact('producto1'));
+        return view('factura', compact('factura'));
     }
 }

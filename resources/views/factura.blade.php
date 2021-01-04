@@ -57,7 +57,11 @@
                 <p>Correo electronico: <strong>{{ $factura->email }}</strong></p>
                 <p>Cantidad de cuotas: <strong>{{ $factura->cantidad_cuotas }}</strong></p>
                 <p>Pago a la recepción: <strong>{{ $factura->pago }}</strong></p>
-                <p>Fecha del próximo pago: <strong>{{ $proximo_pago }}</strong></p>
+                @foreach($factura->proximo_pago as $i)
+                    <p>Fechas del próximo pago: <strong>{{ $i }}</strong></p>
+                @endforeach
+
+
             </div>
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 <table id="tabla-venta">
@@ -120,8 +124,8 @@
             <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
                 <h4 class="text-center">Datos del emisor:</h4>
                 <div>
-                    <p>Nombre: <strong>John Doe</strong></p>
-                    <p>Teléfono: <strong>11 2233 - 4455</strong></p>
+                    <p>Nombre: <strong>Marta Perez</strong></p>
+                    <p>Teléfono: <strong>15 2233 - 4455</strong></p>
                     <p>Correo electronico: <strong>dummy_email@gmail.com</strong></p>
                 </div>
             </div>
